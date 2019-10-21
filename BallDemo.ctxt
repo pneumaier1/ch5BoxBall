@@ -9,4 +9,6 @@ comment2.target=void\ bounce()
 comment2.text=\r\n\ Simulate\ two\ bouncing\ balls\r\n
 comment3.params=numofBalls
 comment3.target=void\ boxBounce(int)
-numComments=4
+comment4.params=
+comment4.target=void\ drawFrame()
+numComments=5
