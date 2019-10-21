@@ -1,5 +1,7 @@
 import java.awt.Color;
-
+import java.awt.geom.*;
+import java.util.Random;
+import java.awt.*;
 /**
  * Class BallDemo - a short demonstration showing animation with the 
  * Canvas class. 
@@ -9,6 +11,9 @@ import java.awt.Color;
  *
  * @author Michael Kölling and David J. Barnes
  * @version 2011.07.31
+ * 
+ * @author Paul Neumaier 
+ * @version 2019.10.21
  */
 
 public class BallDemo   
@@ -52,5 +57,13 @@ public class BallDemo
                 finished = true;
             }
         }
+    }
+    
+    public void boxBounce(int numofBalls)
+    {
+        myCanvas.setVisible(true);
+        Rectangle box = new Rectangle(50,50,400,400);
+        myCanvas.draw(box);
+        Random random = new Random();
     }
 }
